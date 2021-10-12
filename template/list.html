@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>database</h2>
+    {% for profile in profiles %}
+    <h2>{{profile.name}}</h2>
+    <a href="/{{profile.id}}">download </a>
+    {% endfor %}
+  </body>
+</html>
